@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>destructuring js</h1>
+  <div id="root"></div>
+  <!-- dùng thu nhận các đối số còn lại của mảng-->
+
+  <script>
+    class Student { //lớp con kế thừa cha fullname
+      constructor(fullname,school,std_year){
+        this.fullname=fullname;
+        this.school=school;
+        this.std_year=std_year;
+      }
+      set setFullname(fullname){
+        this.fullname=fullname;
+      }  
+      get getFullname(){
+        return this.fullname;
+      }
+    }
+    let my_info = new Student('Nghĩa jos','Duy tân','3');
+      my_info.setFullname="nghĩa"
+      console.log( my_info.getFullname);
+  </script>
+</body>
+
+</html>

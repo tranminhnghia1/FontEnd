@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="demo">hello</h1>
+    <h2 class="demo">1.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, pariatur.</h2>
+    <h2 >2.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, pariatur.</h2>
+    <script>
+        //truy cập ptu đầu tiền
+          //document.querySelector('h2').style.color="red";
+     //truy cập nhiều ptu
+        const selectorAll = document.querySelectorAll('h2');
+
+        for(let elements of selectorAll){
+            elements.style.color ='green';
+        }
+        console.log(selectorAll);
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> <!--onload="alert('load ok')" -->
+    <!-- <h1 onmouseover="console.log('ok vào')" onmouseout="console.log('ok ra')">hover js</h1> -->
+    <form action="" style="width: 300px; margin: 0 auto; margin-top: 170px;" id="register">
+        <fieldset>
+            <legend>Regisster form</legend>
+            <label for="username">username</label>
+            <br>
+            <input type="text" name="username" id="username"><br>
+            <label for="password">password</label><br>
+            <input type="password" name="password" id="password"><br>
+            <label for="city">city</label><br>
+            <select name="" id="city">
+                <option value="">--chọn tỉnh--</option>
+                <option value="1">Đà nẵng</option>
+                <option value="2">HCM</option>
+                <option value="3">Hà nội</option>
+            </select><br>
+            <input type="submit" name="submit" id="submit" value="logim">
+        </fieldset>
+    </form>
+    <div id="result"></div>
+    <script>
+        const Register = document.forms.register
+        Register.addEventListener('submit', function(e){
+            const result = document.getElementById('result');
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const city = document.getElementById('city').value;
+
+            function show_city(city){
+                let cityname =[];
+                cityname[1] ='Đà nẵng';
+                cityname[2] ='HCM';
+                cityname[3] ='Hà nội';
+                return cityname[city];
+            }
+            data = `
+                username: <b>${username} </b> <br>            
+                password: <b>${password} </b> <br>            
+                city: <b>${show_city(city)} </b>        
+            `
+            result.innerHTML = data
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

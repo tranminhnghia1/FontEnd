@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>thêm phần tử vào mảng</h1>
+    <script>
+        
+        let list_number=[24, 65, 44, 34, 56, 12, 13, 55, 101];
+        let even =[];
+        for(let value of list_number){
+            if(value % 2 == 0){
+                even.unshift(value);
+            }
+        }
+        console.log(even);
+        
+    </script>
+</body>
+</html>

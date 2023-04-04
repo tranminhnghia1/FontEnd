@@ -1,0 +1,75 @@
+body{
+    background-image: url(imgs/bg.jpeg);
+    background-position-y: -100px;
+    background-size: cover;
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+#header{
+
+    background: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo img{
+    max-width: 50px;
+    height: 50px;
+}
+ul.main-menu {
+    display: flex;
+}
+ul.main-menu li{
+    position: relative;
+}
+ul.main-menu li a{
+
+    display: block;
+    padding: 13px 35px;
+    border: 1px solid rgb(70, 69, 69);
+    color: beige;
+    text-decoration: none;
+}
+ul.main-menu li:hover>.sub-menu{
+    display: block;
+}
+ul.main-menu li ul.sub-menu{
+    position: absolute;
+    width: 200px;
+    background: rgb(122, 121, 121);
+    /* display: none;  */
+}
+ul.main-menu li ul.sub-menu a{
+    padding: 10px 35px;
+}
+ul.main-menu li ul.sub-menu>li:hover>a{
+    border-bottom: 1px solid rgb(226, 137, 137);
+}
+ul.main-menu li ul.sub-menu ul.sub-menu{
+    left: 200px;
+   
+}
+ul.main-menu>li>a{
+    position: relative;
+}
+ul.main-menu>li>a::before{
+    content: "";
+    background: red;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: all 1s;
+}
+ul.main-menu>li:hover>a::before{
+    width: 100%;
+}

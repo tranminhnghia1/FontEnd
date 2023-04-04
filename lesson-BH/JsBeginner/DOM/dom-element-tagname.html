@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <h2>1.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, pariatur.</h2>
+    <h2 >2.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, pariatur.</h2>
+    <script>
+        const h2Element = document.getElementsByTagName('h2');
+        // h2Element[0].style.color ='red';
+        // h2Element[1].style.color ='green';
+        //===sử dụng vonghf lặp để xử lý html colection
+        // for(let i =0; i<h2Element.length ;i++){
+        //     h2Element[i].style.color ='red';
+        // }
+
+        for(let elements of h2Element){
+            elements.style.color ='green';
+        }
+        console.log(h2Element);
+    </script>
+</body>
+</html>

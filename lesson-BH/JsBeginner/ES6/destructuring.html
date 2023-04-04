@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>destructuring js</h1>
+  <!-- dùng thu nhận các đối số còn lại của mảng-->
+
+  <script>
+    //1.nhận giá trị từ array, object
+      // let my_array = [2,3,5,7];
+      //cách thường
+      // let a = my_array[0];
+      // let b = my_array[1];
+
+      //cách nâng cao
+      // let [a,b,c,d] = my_array
+      // console.log(`c= ${c}`); 
+      let my_obj = {
+        fullname : 'trần nghĩa',
+        age : 21
+      };
+      //cách thường
+      // let fullname = my_obj.fullname;
+      //cách nâng cao
+      // let {fullname,age} = my_obj
+      // console.log(fullname);
+      // console.log(age);
+
+    //2.giá trị mặc định
+      // let my_array=[2,3,4];
+      // let [a,b,c,d=88] = my_array;
+      // console.log(a);
+      // console.log(d);
+    //3. ...rest
+      // let my_array =[1,2,3,4,5,6,7,8];
+      // let [a,b,...moreNumber] = my_array;
+      // console.log(moreNumber);
+
+    //4.bỏ qua phần tử
+      // let my_array =[1,2,3,4];
+      // let [a, ,c] = my_array
+      // console.log(c);
+
+    //5.hoán đổi giá trị
+        // let a=8,b=4;
+        // [ a,b] =[b,a];
+        // console.log(b);
+    
+    //6.nhận giá trị từ function
+    let my_func = (a,b)=>{
+      return [a,b];
+    }
+    // let my_array = my_func(5,7);
+    let [a,b] = my_func(5,7);
+    console.log(a);
+    console.log(b);
+  </script>
+</body>
+
+</html>

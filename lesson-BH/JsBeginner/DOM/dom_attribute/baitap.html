@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 300px;
+        margin-right: 50px;
+    }
+</style>
+<body style="display: flex;">
+    <div class="product-item">
+        <img 
+        data-src-v2="ao2.jpeg"
+        data-src-v1="ao1.jpeg"
+        src="ao1.jpeg" alt="">
+    </div>
+    <div class="product-item">
+        
+        <img
+        data-src-v2="bag2.jpeg"
+        data-src-v1="bag1.jpeg"
+         src="bag1.jpeg" alt="">
+    </div>
+    
+    <script>
+      const productItems = document.querySelectorAll('.product-item');
+      for (let productItem of productItems){
+        productItem.addEventListener('mouseover', function(){
+            const srcV2 = this.querySelector('img').dataset.srcV2;
+            this.querySelector('img').setAttribute('src',srcV2);
+        })
+        productItem.addEventListener('mouseout', function(){
+            const srcV1 = this.querySelector('img').dataset.srcV1;
+            this.querySelector('img').setAttribute('src',srcV1);
+        })
+      }
+    </script>
+</body>
+</html>

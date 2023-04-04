@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Xếp loại học lực trên thang điểm 10</h1>
+    <script>
+        let mark;
+        mark=5;
+        if((mark>=1)&&(mark<=10)){
+          if(mark<4){
+              document.write('Xếp loại kém');
+          }
+          else if(mark<5){
+              document.write('Xếp loại yếu');
+          }
+          else if(mark<7){
+              document.write('Xếp loại trung bình');
+          }
+          else if(mark<8){
+              document.write('Xếp loại khá');
+          }
+          else{
+              document.write('Xếp loại giỏi');
+          }
+        }
+        else{
+            alert('Nhập sai điểm số');
+        }
+    </script>
+</body>
+</html>

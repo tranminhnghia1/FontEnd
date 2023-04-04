@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>destructuring js</h1>
+  <div id="root"></div>
+  <!-- dùng thu nhận các đối số còn lại của mảng-->
+
+  <script>
+    class User{
+      //thuộc tính
+      //phương thức
+      constructor(fullname){ //thuốc tính fullname của lớp  là biến tỏng chương trình
+        this.fullname=fullname;
+      }
+      show(){ //phương thức show của lớp là hàm trong chương trình
+        return `Xin chào: ${this.fullname}`;
+      }
+      render(){
+        document.getElementById('root').innerHTML=this.show();
+      }
+    }
+    class Student extends User{ //lớp con kế thừa cha fullname
+      constructor(fullname,school,std_year){
+        super(fullname);
+        this.school=school;
+        this.std_year=std_year;
+      }
+      introduce(){
+        //return super.show();
+        return `Tôi là: ${this.fullname}, học trường đại học ${this.school}, là sinh viên năm ${this.std_year}`;
+      }
+      render(){
+        document.getElementById('root').innerHTML=this.introduce();
+      }
+    }
+
+    let my_info = new Student('Nghĩa jos','Duy tân','3');
+    // console.log(my_info.introduce());
+    my_info.render()
+  </script>
+</body>
+
+</html>

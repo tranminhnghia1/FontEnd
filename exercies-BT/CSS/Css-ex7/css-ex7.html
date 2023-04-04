@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #container {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ul#list-product {
+            padding: 0px;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        ul#list-product li {
+            flex-basis: 33.33%;
+            padding: 30px 10px;
+            text-align: center
+        }
+
+        ul#list-product .product-item {
+            border: 2px solid black;
+            position: relative;
+            padding: 10px 0px;
+        }
+        ul#list-product .product-item:hover{
+            border: 2px solid red;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .discount {
+            position: absolute;
+            top:0px;
+            right: 0px;
+        }
+        .price{
+            display: block;
+            padding: 10px;
+            font-weight: bold;
+            color: tomato;
+        }
+        .buy-now{
+            color: chocolate;
+        }
+         h1{
+             text-align: center;
+             font-weight: bold;
+             text-transform: uppercase;
+         }
+         p{
+             text-align: center;
+         }
+    </style>
+    <div id="container">
+        <h1>Bài tập 7-Hiển thị danh sách sản phẩm</h1>
+        <ul id="list-product">
+            <li>
+                <div class="product-item">
+                    <a href="">
+                        <img src="images/product1.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <span class="discount">
+                        <img src="images/sale.png" alt="">
+                    </span>
+
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="">
+                        <img src="images/product11.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="">
+                        <img src="images/product5.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="">
+                        <img src="images/product9.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="">
+                        <img src="images/product5.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <span class="discount">
+                        <img src="images/sale.png" alt="">
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="">
+                        <img src="images/product11.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+        </ul>
+        <p>Unitop-Học web đi làm</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" style="width: 400px; margin: 0 auto; margin-top: 170px;" id="register">
+        <fieldset>
+            <legend>Register form</legend>
+            <label for="username">username</label>
+            <br>
+            <input type="text" name="username" id="username"><br>
+            <label for="password">password</label><br>
+            <input type="text" name="password" id="password">
+            <input type="submit" name="submit" id="submit" value="logim">
+        </fieldset>
+    </form>
+    <script>
+     const  username = document.getElementById('username');
+     const Register = document.forms.register //regisster là id của form
+      // console.log(username);
+      Register.addEventListener('submit', function(e){
+        console.log(username.value);
+        e.preventDefault(); //ngăn chặn hành vi load trang, hành vi mặc định
+      });
+       
+    </script>
+</body>
+</html>

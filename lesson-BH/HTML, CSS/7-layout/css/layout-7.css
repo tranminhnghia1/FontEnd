@@ -1,0 +1,37 @@
+#header {
+    background-color: tomato;
+    padding: 15px;
+}
+.container-full{
+    /* width: 100%; */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#wp-content {
+    display: flex;
+}
+
+#sidebar-left {
+    background-color: rgb(150, 143, 135);
+    flex: 0 1 20%;
+    min-height: 600px;
+    padding: 15px;
+}
+
+#content {
+    background-color: beige;
+    flex: 0 1 60%;
+    padding: 15px;
+}
+
+#sidebar-right {
+    background-color: rgb(150, 143, 135);
+     flex: 0 1 20%;
+    min-height: 600px;
+    padding: 15px;
+}
+
+#footer {
+    background-color: rgb(129, 72, 72);
+    padding: 15px;
+}

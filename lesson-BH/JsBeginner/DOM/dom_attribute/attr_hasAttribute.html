@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="" title="hello" count="2002">attribute js dom</a>
+    <div id="result"></div>
+    <script>
+        const attribute = document.querySelector('a');
+        //console.log(attribute.title);
+        console.log(attribute.hasAttribute('count'));
+        if(attribute.hasAttribute('count')){
+            console.log(`Review: ${attribute.getAttribute('count')}`);
+            document.getElementById('result').innerHTML = `Review: ${attribute.getAttribute('count')}`;
+        }
+    </script>
+</body>
+</html>

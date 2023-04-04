@@ -1,0 +1,77 @@
+body{
+    background-image: url(imgs/bg.jpeg);
+    background-size: cover;
+    background-position-y: -100px;
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+#header{
+    background: black;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul.main-menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav #logo img{
+    max-width: 50px;
+    height: auto;
+}
+ul.main-menu li a{
+    display: block;
+    padding: 14px 15px;
+    color: aliceblue;
+}
+ul.main-menu li{
+    position: relative;
+}
+ul.main-menu li .sub-menu{
+    position: absolute;
+    padding: 25px 0px ;
+    list-style: none;
+    background-color: rgb(54, 54, 54);
+    display: none;
+    border: 1px solid rgb(105, 104, 104);;
+}
+ul.main-menu li:hover>.sub-menu{
+    display: block;
+}
+ul.main-menu .sub-menu li a{
+    border-bottom: 1px solid rgb(105, 104, 104);
+}
+ul.main-menu .sub-menu li:last-child a{
+    border: none;
+}
+ul.main-menu .sub-menu li:hover>a{
+    border-bottom: 1px solid rgb(167, 166, 166);
+}
+ul.main-menu .sub-menu .sub-menu{
+    left: 87px;
+    top: -25px;
+    padding-top: 0;
+}
+/* lập hover hiện border */
+ul.main-menu>li>a{
+    position: relative;
+}
+ul.main-menu>li>a::before{
+    content: "";
+    background: red;
+    height: 4px;
+    width: 0%;
+   position: absolute;
+bottom: 0px;
+left: 0px;
+transition: all 1s;
+}
+ul.main-menu>li:hover>a::before{
+    width: 100%;
+}

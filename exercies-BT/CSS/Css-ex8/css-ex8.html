@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        ul#list-product {
+            padding: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: space-between;
+        }
+
+        ul#list-product li {
+            flex-basis: 30%;
+            padding: 0px 15px;
+            margin-bottom: 40px;
+        }
+
+        ul#list-product li .product-item {
+            border: 1px solid slategray;
+            text-align: center;
+            padding: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        ul#list-product li .product-item:hover {
+            border: 1px solid yellow;
+        }
+        ul#list-product li .product-item:hover img{
+            transform: rotate(1deg);
+        }
+
+        .price {
+            display: block;
+            padding: 10px;
+            font-weight: bold;
+            color: coral;
+        }
+
+        .buy-now {
+            position: absolute;
+            bottom: -40px;
+            left: 0px;
+            padding: 10px;
+            background-color: tomato;
+            width: 100%;
+            transition: all 1s;
+        }
+
+        ul#list-product li .product-item:hover .buy-now {
+            position: absolute;
+            bottom: 0px;
+        }
+
+        .discount {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+        }
+    </style>
+    <div id="container">
+        <ul id="list-product">
+            <li>
+                <div class="product-item">
+                    <a href="" class="img">
+                        <img src="images/product1.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
+                    <a class="buy-now">Mua ngay</a>
+                    <span class="discount">
+                        <img src="images/sale.png" alt="">
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="" class="img">
+                        <img src="images/product11.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
+                    <a class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="" class="img">
+                        <img src="images/product5.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
+                    <a class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="" class="img">
+                        <img src="images/product1.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
+                    <a class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="" class="img">
+                        <img src="images/product9.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
+                    <a class="buy-now">Mua ngay</a>
+                    <span class="discount">
+                        <img src="images/sale.png" alt="">
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="" class="img">
+                        <img src="images/product5.jpg" alt="">
+                    </a>
+                    <span class="price">499.000đ</span>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
+                    <a class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        /* ul li:first-child{
+            color: red;
+        }
+        ul li:last-child{
+            color: red;
+        } */
+        ul li:nth-child(odd){
+            color: blueviolet;
+        } 
+        ul li:nth-child(even){
+            color: rgb(228, 140, 8);
+        }
+    </style>
+    <ul>
+        <li>con 1</li>
+        <li>con 2
+            <ul>
+                <li>con 3.1</li>
+                <li>con 3.2</li>
+                <li>con 3.3</li>
+            </ul>
+        </li>
+        <li>con 3</li>
+    </ul>
+    <ul>
+        <li>con 5</li>
+        <li>con 6</li>
+        <li>con 7</li>
+    </ul>
+</body>
+
+</html>

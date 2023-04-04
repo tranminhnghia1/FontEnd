@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .product {
+        display: flex;
+        list-style: none;
+    }
+
+    li .product-item {
+        border: 1px solid rgb(71, 69, 69);
+        margin-right: 10px;
+        text-align: center;
+        width: 300px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    p:first-child {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <h1>nghia</h1>
+    <ul class="product">
+
+
+    </ul>
+    <script>
+        const product = document.querySelector('.product');
+        // 1.tạo mảng ds sản phẩm
+        let product_array = [
+            {
+                id: 1,
+                product_name: 'Iphone 13 max',
+                product_thumb: 'https://cdn.tgdd.vn/Products/Images/42/247508/iphone14-pro-1.jpg',
+                price: 'Giá: 27.000.000',
+                ram: 'Ram: 6GB',
+
+            },
+            {
+                id: 2,
+                product_name: 'Iphone 14 pro max',
+                product_thumb: 'https://cdn.tgdd.vn/Products/Images/42/247508/iphone-14-pro-trang-1.jpg',
+                price: 'Giá: 30.000.000',
+                ram: 'Ram: 12GB',
+
+            }
+        ];
+
+        // 2.xuất dữ liệu lên html bawnghf array map
+        let productsHtml = product_array.map((element) => {
+            return `
+            <li>
+                <div class="product-item">
+                    <a href="" class="product-thumb">
+                        <img src="${element.product_thumb}" alt="">
+                    </a>
+                    <a href="" class="product-name"><p>${element.product_name}</p></a>
+                    <p>${element.ram}</p>
+                    <span>${element.price}</span>
+             </div>
+            </li>
+            `;
+        })
+
+        // console.log(productsHtml);
+        product.innerHTML=productsHtml.join(""); //hàm join để xóa dấu phẩy giữa hai san phẩm
+    </script>
+</body>
+
+</html>

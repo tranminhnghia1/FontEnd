@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tạo html bằng js</title>
+</head>
+<body>
+    <script>
+        const body = document.body;
+        const divWrapper = document.createElement('div');// tạo 1 thẻ div  có id class và có content
+        divWrapper.id  ='main';
+        divWrapper.className='class';
+        divWrapper.innerText='nghĩa đx nè';
+        console.log(divWrapper);
+        //tạo h1
+        const h1 = document.createElement('h1');
+        h1.id  ='idh1';
+        h1.className='h1class';
+        h1.innerText='title mè';
+        body.appendChild(h1);
+        body.appendChild(divWrapper);
+    </script>
+</body>
+</html>

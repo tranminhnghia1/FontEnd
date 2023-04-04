@@ -1,0 +1,30 @@
+ /* body{
+            display: flex;
+        } */
+        #wrapper{
+         max-width: 960px;
+             margin: 0px auto;
+         }
+         #header{
+             background-color: brown;
+             padding: 15px;
+         }
+         #wp-content{
+              display: flex;
+         }
+         #content{
+             background-color: bisque;
+             min-height: 600px;
+             flex: 0 1 70%;
+             padding: 15px;
+         }
+         #sidebar{
+             background-color: blueviolet;
+             min-height: 600px;
+             flex: 0 1 30%;
+             padding: 15px;
+         }
+         #footer{
+             background-color: black;
+             padding: 15px;
+         }

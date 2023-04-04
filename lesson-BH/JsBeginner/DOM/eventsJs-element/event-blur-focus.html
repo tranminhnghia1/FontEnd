@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> <!--onload="alert('load ok')" -->
+    <!-- <h1 onmouseover="console.log('ok vào')" onmouseout="console.log('ok ra')">hover js</h1> -->
+    <form action="" style="width: 300px; margin: 0 auto; margin-top: 170px;">
+        <fieldset>
+            <legend>Regisster form</legend>
+            <label for="username">username</label>
+            <br>
+            <input type="text" name="username" id="username"><br>
+            <label for="password">password</label><br>
+            <input type="text" name="password" id="password">
+        </fieldset>
+    </form>
+    <script>
+        const username = document.getElementById('username'); //vào thẻ h1
+        username.addEventListener('focus', function () {
+            console.log(username.value);
+           // console.log("ok vào");
+        })
+        username.addEventListener('blur', function () {
+            console.log(username.value);
+        })
+    </script>
+</body>
+
+</html>

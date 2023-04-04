@@ -1,0 +1,28 @@
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+#header{
+    background-color: blue;
+    padding: 15px;
+}
+#wp-content{
+    display: flex;
+}
+#content{
+    background-color: rgb(145, 135, 133);
+    padding: 15px;
+    flex: 0 1 70%;
+    min-height: 600px;
+    order: 2;
+}
+#sidebar{
+    background-color: rgb(175, 97, 83);
+    padding: 15px;
+    flex: 0 1 30%;
+    order: 1;
+}
+#footer{
+    background-color: rgb(16, 16, 17);
+    padding: 15px;
+}

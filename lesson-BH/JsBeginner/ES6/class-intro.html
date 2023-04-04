@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>destructuring js</h1>
+  <div id="root"></div>
+  <!-- dùng thu nhận các đối số còn lại của mảng-->
+
+  <script>
+    class User{
+      //thuộc tính
+      //phương thức
+      constructor(fullname){ //thuốc tính fullname của lớp  là biến tỏng chương trình
+        this.fullname=fullname;
+      }
+      show(){ //phương thức show của lớp là hàm trong chương trình
+        return `Xin chào: ${this.fullname}`;
+      }
+      render(){
+        document.getElementById('root').innerHTML=this.show();
+      }
+    }
+    let my_info = new User('Trần minh nghia');
+    my_info.render();
+    // console.log(my_info.show());
+
+    let my_wife = new User('Lê thị huyền');
+    console.log(my_wife.show());
+  </script>
+</body>
+
+</html>

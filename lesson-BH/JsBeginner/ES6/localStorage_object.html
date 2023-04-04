@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>localStorage object</h1>
+
+  <script>
+    //dl đc    chuyển sang string khi lưu
+    const LIST_USERS = "LIST_USERS";
+    let user = {
+      fullname: 'trần minh nghĩa',
+      age: 21,
+      email: 'nghia22@gmail.com'
+    }
+
+    let users = [
+      {
+        fullname: 'trần minh nghĩa',
+        age: 21,
+        email: 'nghia22@gmail.com'
+      },
+      {
+        fullname: 'Lê thị huyền',
+        age: 22,
+        email: 'huyen21@gmail.com'
+      }
+    ]
+
+
+    // localStorage.setItem('user_infor', JSON.stringify(user)); //JSON.stringify để chuyển object qua string
+    //cách lấy dl trong local dạng string ra lại dạng object
+    // let data = JSON.parse(localStorage.getItem('user_infor'))
+    // console.log(data);
+    // console.log(data.fullname);
+
+
+    localStorage.setItem(LIST_USERS, JSON.stringify(users));
+    let data = JSON.parse(localStorage.getItem(LIST_USERS))
+     console.log(data);
+
+  </script>
+</body>
+
+</html>

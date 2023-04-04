@@ -1,0 +1,32 @@
+#header,
+footer{
+    color: bisque;
+    flex-shrink: auto;
+}
+#header{
+    background-color: blue;
+    padding: 15px;
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+#footer{
+    background-color: black;
+    padding: 15px;
+}
+#wp-content{
+    display: flex;
+}
+#content{
+    background-color: bisque;
+    padding: 15px;
+    flex: 0 1 70%;
+    min-height: 600px;
+}
+#sidebar{
+    background-color: rgb(235, 183, 14);
+    padding: 15px;
+    flex: 0 1 30%;
+    min-height: 600px;
+}

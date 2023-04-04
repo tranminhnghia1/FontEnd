@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="" title="hello" count="2002">attribute js dom</a>
+    <script>
+        const attribute = document.querySelector('a');
+        //console.log(attribute.title);
+        console.log(attribute.getAttribute('count'));
+        //cập nhật giá trị thuộc tính
+        attribute.setAttribute('count', 2023);
+        console.log(attribute.getAttribute('count'));
+
+        // /tạo mới thuộc tính
+        attribute.setAttribute('nghia', 'deptrai');
+        console.log(attribute.getAttribute('nghia'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>cập nhật giá trị mảng foreach trong js</h1>
+    <script>
+        let list_number = [2, 4, 7, 1, 5];
+        let t=0;
+        list_number.forEach(function (x, index, arr) {
+            arr[index] = x * 15;
+        })
+        console.log(list_number);
+    </script>
+</body>
+
+</html>

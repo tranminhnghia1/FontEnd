@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>phương thức object</h1>
+    <script>
+        //định nghĩa một phương thức
+        /*let number={
+            a: 30,
+            b: 20,
+          sum: function(){
+              document.write('phương thức tính tổng')
+          }
+        };
+        document.write(number.sum());*/
+        //toán tử this 
+        // let number ={
+        //     a: 12,
+        //     b :20,
+        //     num: function(){
+        //         return this.a+this.b;
+        //     }
+        // };
+        // document.write(number.num());
+
+        // thêm một phương thức vào object
+        let number ={
+            a: 12,
+            b :20,
+            num: function(){
+                return this.a+this.b;
+            }
+        };
+        number.minus =function(){
+            return this.a-this.b;
+        }
+        document.write(number.minus());
+
+    </script>
+</body>
+
+</html>
